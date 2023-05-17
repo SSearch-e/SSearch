@@ -1,0 +1,100 @@
+{
+  "websites": [
+    {
+      "title": "Google",
+      "description": "A popular search engine and web services provider.",
+      "link": "https://www.google.com",
+      "ico": "https://www.google.com/favicon.ico"
+    },
+    {
+      "title": "Wikipedia",
+      "description": "A free online encyclopedia with articles on various topics.",
+      "link": "https://www.wikipedia.org",
+      "ico": "https://www.wikipedia.org/favicon.ico"
+    },
+    {
+      "title": "YouTube",
+      "description": "A video sharing platform where users can upload, watch, and comment on videos.",
+      "link": "https://www.youtube.com",
+      "ico": "https://www.youtube.com/favicon.ico"
+    },
+    {
+      "title": "Amazon",
+      "description": "An online marketplace for buying and selling various products.",
+      "link": "https://www.amazon.com",
+      "ico": "https://www.amazon.com/favicon.ico"
+    },
+    {
+      "title": "Twitter",
+      "description": "A social media platform where users can share and interact with short messages.",
+      "link": "https://www.twitter.com",
+      "ico": "https://www.twitter.com/favicon.ico"
+    },
+    {
+      "title": "Reddit",
+      "description": "A social news aggregation and discussion website.",
+      "link": "https://www.reddit.com",
+      "ico": "https://www.reddit.com/favicon.ico"
+    },
+    {
+      "title": "Netflix",
+      "description": "A popular streaming service for movies and TV shows.",
+      "link": "https://www.netflix.com",
+      "ico": "https://www.netflix.com/favicon.ico"
+    },
+    {
+      "title": "Stack Overflow",
+      "description": "A question and answer website for programmers.",
+      "link": "https://stackoverflow.com",
+      "ico": "https://stackoverflow.com/favicon.ico"
+    },
+    {
+      "title": "LinkedIn",
+      "description": "A professional networking platform for connecting professionals worldwide.",
+      "link": "https://www.linkedin.com",
+      "ico": "https://www.linkedin.com/favicon.ico"
+    },
+    {
+      "title": "Etsy",
+      "description": "An online marketplace for handmade and vintage items.",
+      "link": "https://www.etsy.com",
+      "ico": "https://www.etsy.com/favicon.ico"
+    },
+    {
+      "title": "GitHub",
+      "description": "A web-based platform for version control and collaboration.",
+      "link": "https://github.com",
+      "ico": "https://github.com/favicon.ico"
+    },
+    {
+      "title": "Instagram",
+      "description": "A photo and video sharing social networking service.",
+      "link": "https://www.instagram.com",
+      "ico": "https://www.instagram.com/favicon.ico"
+    },
+    {
+      "title": "Microsoft",
+      "description": "Official website of Microsoft Corporation.",
+      "link": "https://www.microsoft.com",
+      "ico": "https://www.microsoft.com/favicon.ico"
+    },
+    {
+      "title": "BBC",
+      "description": "British Broadcasting Corporation - News, entertainment, and educational content.",
+      "link": "https://www.bbc.co.uk",
+      "ico": "https://www.bbc.co.uk/favicon.ico"
+    },
+    {
+      "title": "Pinterest",
+      "description": "A social media platform for sharing and discovering ideas.",
+      "link": "https://www.pinterest.com",
+      "ico": "https://www.pinterest.com/favicon.ico"
+    },
+    {
+      "title": "Dropbox",
+      "description": "A cloud storage service for storing and sharing files.",
+      "link": "https://www.dropbox.com",
+      "ico": "https://www.dropbox.com/favicon.ico"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+  <title>SSearch</title>
+</head>
+<body>
+  <div class="container">
+    <img src="images/logo.png" alt="SSearch Logo" class="logo">
+    <form class="search-bar" action="search" onsubmit="submitSearch(event)">
+  <input id="search-query" type="text" placeholder="Search...">
+  <button type="submit">
+    <img src="images/search.png" alt="Search Icon" class="search-icon">
+  </button>
+</form>
+
+<script>
+  function submitSearch(event) {
+    event.preventDefault(); // Prevent default form submission
+    var searchQuery = document.getElementById('search-query').value;
+    if (searchQuery.trim() !== '') {
+      window.location.href = 'search?q=' + encodeURIComponent(searchQuery);
+    }
+  }
+</script>
+  </div>
+</body>
+</html>

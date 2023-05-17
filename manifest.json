@@ -1,0 +1,15 @@
+{
+  "name": "SSearch",
+  "short_name": "SSearch",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#202020",
+  "theme_color": "#202020",
+  "icons": [
+    {
+      "src": "images/app-logo.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    }
+  ]
+}

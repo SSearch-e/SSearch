@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="search.css">
+  <title>SSearch Results</title>
+<link rel="manifest" href="manifest.json">
+  <script>
+    window.onload = function() {
+      // Get the value of the "q" parameter from the URL
+      var urlParams = new URLSearchParams(window.location.search);
+      var searchQuery = urlParams.get('q');
+
+      // Update the search query value in the input field
+      var searchInput = document.querySelector('.search-bar input');
+      searchInput.value = searchQuery;
+
+      // Update the search results heading
+      var searchResultsHeading = document.querySelector('h1');
+      searchResultsHeading.textContent = 'Search Results for "' + searchQuery + '"';
+
+      // Fetch the JSON data
+      fetch('./ssearch.json')
+        .then(response => response.json())
+        .then(data => {
+          var searchResultsContainer = document.querySelector('.search-results');
+          searchResultsContainer.innerHTML = ''; // Clear previous results
+
+          data.websites.forEach(function(website) {
+            if (website.title.toLowerCase().includes(searchQuery.toLowerCase())) {
+              // Create a search result div
+              var searchResultDiv = document.createElement('div');
+              searchResultDiv.className = 'search-result';
+
+              // Create a link for the search result title
+              var link = document.createElement('a');
+              link.href = website.link;
+link.id="link";
+              link.textContent = website.title;
+
+              // Create a paragraph for the search result description
+              var description = document.createElement('p');
+              description.textContent = website.description;
+
+              // Append the link and description to the search result div
+              searchResultDiv.appendChild(link);
+              searchResultDiv.appendChild(description);
+
+              // Append the search result div to the search results container
+              searchResultsContainer.appendChild(searchResultDiv);
+            }
+          });
+        })
+        .catch(error => {
+          console.log('Error:', error);
+        });
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="images/logo.png" alt="Search Engine Logo" class="logo">
+      <form class="search-bar" action="search" onsubmit="submitSearch(event)">
+  <input id="search-query" type="text" placeholder="Search...">
+  <button type="submit">
+    <img src="images/search.png" alt="Search Icon" class="search-icon">
+  </button>
+</form>
+
+<script>
+  function submitSearch(event) {
+    event.preventDefault(); // Prevent default form submission
+    var searchQuery = document.getElementById('search-query').value;
+    if (searchQuery.trim() !== '') {
+      window.location.href = 'search?q=' + encodeURIComponent(searchQuery);
+    }
+  }
+</script>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Search Results for "Your search query"</h1>
+
+      <div class="search-results"></div>
+    </div>
+  </main>
+</body>
+</html>
