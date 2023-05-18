@@ -95,6 +95,18 @@
       "description": "A cloud storage service for storing and sharing files.",
       "link": "https://www.dropbox.com",
       "ico": "https://www.dropbox.com/favicon.ico"
+    },
+    {
+      "title": "Spotify",
+      "description": "A digital music, podcast, and video streaming service.",
+      "link": "https://www.spotify.com",
+      "ico": "https://www.spotify.com/favicon.ico"
+    },
+    {
+      "title": "CNN",
+      "description": "Cable News Network - Breaking news, world news, and multimedia.",
+      "link": "https://www.cnn.com",
+      "ico": "https://www.cnn.com/favicon.ico"
     }
   ]
 }
