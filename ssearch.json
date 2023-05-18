@@ -155,6 +155,30 @@
       "description": "Cable News Network - Breaking news, world news, and multimedia.",
       "link": "https://www.cnn.com",
       "ico": "https://www.cnn.com/favicon.ico"
+    },
+     {
+      "title": "Google Drive",
+      "description": "A cloud storage and file backup service.",
+      "link": "https://drive.google.com",
+      "ico": "https://drive.google.com/favicon.ico"
+    },
+    {
+      "title": "Google Docs",
+      "description": "A web-based word processor for creating and editing documents.",
+      "link": "https://docs.google.com",
+      "ico": "https://docs.google.com/favicon.ico"
+    },
+    {
+      "title": "Google Sites",
+      "description": "A website creation and hosting platform.",
+      "link": "https://sites.google.com",
+      "ico": "https://sites.google.com/favicon.ico"
+    },
+    {
+      "title": "Firebase",
+      "description": "A comprehensive app development platform by Google.",
+      "link": "https://firebase.google.com",
+      "ico": "https://firebase.google.com/favicon.ico"
     }
   ]
 }
