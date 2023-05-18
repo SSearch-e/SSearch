@@ -107,6 +107,54 @@
       "description": "Cable News Network - Breaking news, world news, and multimedia.",
       "link": "https://www.cnn.com",
       "ico": "https://www.cnn.com/favicon.ico"
+    },
+    {
+      "title": "BBC",
+      "description": "British Broadcasting Corporation - News, entertainment, and educational content.",
+      "link": "https://www.bbc.co.uk",
+      "ico": "https://www.bbc.co.uk/favicon.ico"
+    },
+    {
+      "title": "Reuters",
+      "description": "International news organization providing news, analysis, and business updates.",
+      "link": "https://www.reuters.com",
+      "ico": "https://www.reuters.com/favicon.ico"
+    },
+    {
+      "title": "The New York Times",
+      "description": "American newspaper covering national and international news, politics, business, and more.",
+      "link": "https://www.nytimes.com",
+      "ico": "https://www.nytimes.com/favicon.ico"
+    },
+    {
+      "title": "The Guardian",
+      "description": "British newspaper covering news, politics, sports, culture, and more.",
+      "link": "https://www.theguardian.com",
+      "ico": "https://www.theguardian.com/favicon.ico"
+    },
+    {
+      "title": "Al Jazeera",
+      "description": "Qatari media network providing news and current affairs from around the world.",
+      "link": "https://www.aljazeera.com",
+      "ico": "https://www.aljazeera.com/favicon.ico"
+    },
+    {
+      "title": "NBC News",
+      "description": "American news organization offering breaking news, videos, and the latest top stories.",
+      "link": "https://www.nbcnews.com",
+      "ico": "https://www.nbcnews.com/favicon.ico"
+    },
+    {
+      "title": "The Washington Post",
+      "description": "American newspaper providing breaking news, analysis, and opinion.",
+      "link": "https://www.washingtonpost.com",
+      "ico": "https://www.washingtonpost.com/favicon.ico"
+    },
+    {
+      "title": "CNN",
+      "description": "Cable News Network - Breaking news, world news, and multimedia.",
+      "link": "https://www.cnn.com",
+      "ico": "https://www.cnn.com/favicon.ico"
     }
   ]
 }
