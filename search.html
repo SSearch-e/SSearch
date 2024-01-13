@@ -38,5 +38,26 @@
       <a href="https://ssearch-eta.vercel.app/hyper-license.txt" target="_blank">His project copyright</a>
     </p>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('searchbar').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+      submitSearch(event);
+    }
+  });
+
+  function submitSearch(event) {
+    event.preventDefault(); // Prevent default form submission
+    var searchQueryElement = document.getElementById('searchbar');
+
+    if (searchQueryElement) {
+      var searchQuery = searchQueryElement.value;
+      if (searchQuery.trim() !== '') {
+        window.location.href = 'search?q=' + encodeURIComponent(searchQuery);
+      }
+    }
+  }
+});
+</script>
 </body>
 </html>
