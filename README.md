@@ -5,6 +5,8 @@ We still need allot of websites in our json but when we have allot we will be on
 
 Website: https://ssearch-eta.vercel.app/
 
+Latest website ui update: https://github.com/SSearch-e/SSearch/releases/tag/1.0.4
+
 Screenshots:
 
 ![SSearch home page](https://ssearch-eta.vercel.app/ssearch-eta.vercel.app_.png)
