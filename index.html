@@ -45,6 +45,8 @@
 </p>
   <script>
   document.getElementById('searchbar').addEventListener('keydown', function (event) {
+    document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('searchbar').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
       submitSearch(event);
     }
@@ -52,7 +54,7 @@
 
   function submitSearch(event) {
     event.preventDefault(); // Prevent default form submission
-    var searchQueryElement = document.getElementById('search-query');
+    var searchQueryElement = document.getElementById('searchbar');
 
     if (searchQueryElement) {
       var searchQuery = searchQueryElement.value;
@@ -61,7 +63,7 @@
       }
     }
   }
-
+});
 </script>
 </body>
 
