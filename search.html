@@ -37,7 +37,7 @@
               var link = document.createElement('a');
               link.href = website.link;
 link.id="link";
-              link.textContent = website.title;
+              link.innerHTML = `<img src='${website.favicon}'>` + website.title;
 
               // Create a paragraph for the search result description
               var description = document.createElement('p');
