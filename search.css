@@ -1,0 +1,91 @@
+/* Add these styles to the search-results.css file */
+
+body {
+  background-color: rgb(48, 48, 58);
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+}
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+}
+
+#search-container {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+#searchbar {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px; /* Changed from border-radius: 10px; */
+  background-color: rgb(46, 44, 53);
+  color: white;
+  font-size: 16px;
+}
+
+#search-results {
+  display: grid;
+  gap: 20px;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  background-color: rgb(46, 44, 53);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 0; /* Changed from border-radius: 50%; */
+  margin-right: 20px;
+}
+
+.result-info {
+  flex-grow: 1;
+}
+
+.result-name {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.result-description {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+/* Copyright Information */
+.copyright {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+}
+
+.copyright a {
+  color: rgb(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
