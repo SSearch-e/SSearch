@@ -7,7 +7,7 @@ Website: https://ssearch-eta.vercel.app/
 
 Screenshots:
 
-![SSearch home page](https://github.com/SSearch-e/SSearch/assets/110413038/e9f73817-10af-43d9-bd9e-da74e2f0c8d0)
+![SSearch home page](https://ssearch-eta.vercel.app/ssearch-eta.vercel.app_.png)
 
 
 ![SSearch results for google](https://github.com/SSearch-e/SSearch/assets/110413038/10fb73da-4adf-48b8-99b7-6189fe4417d7)
