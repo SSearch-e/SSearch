@@ -11,10 +11,6 @@
       var urlParams = new URLSearchParams(window.location.search);
       var searchQuery = urlParams.get('q');
 
-      // Update the search query value in the input field
-      var searchInput = document.querySelector('.searchbar input');
-      searchInput.value = searchQuery;
-
       // Update the search results heading
       var searchResultsHeading = document.querySelector('h1');
       searchResultsHeading.textContent = 'Search Results for "' + searchQuery + '"';
