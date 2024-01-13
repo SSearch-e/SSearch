@@ -3,6 +3,7 @@
 <head>
 <title>SSearch</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -19,7 +20,9 @@
         </div>
         <div id="search-container">
           <div id="search-input-container">
-            <input type="text" placeholder="Search" />
+            <form onsubmit="submitSearch(event)">
+              <input type="text" placeholder="Search" />
+            </form>
           </div>
         </div>
         <div id="apps-container">
@@ -42,6 +45,15 @@
   Original website made by 
   <a href="https://codepen.io/Hyperplexed/pen/xxJaxJj">Hyperplexed</a>. <a target="_blank" href="https://ssearch-eta.vercel.app/hyper-license.txt">His project copyright</a>
 </p>
+  <script>
+  function submitSearch(event) {
+    event.preventDefault(); // Prevent default form submission
+    var searchQuery = document.getElementById('search-query').value;
+    if (searchQuery.trim() !== '') {
+      window.location.href = 'search?q=' + encodeURIComponent(searchQuery);
+    }
+  }
+</script>
 </body>
 
 </html>
