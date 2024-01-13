@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="search.css">
   <title>SSearch Results</title>
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="../manifest.json">
   <script>
     window.onload = function() {
       // Get the value of the "q" parameter from the URL
@@ -21,7 +21,7 @@
       searchResultsHeading.textContent = 'Search Results for "' + searchQuery + '"';
 
       // Fetch the JSON data
-      fetch('./ssearch.json')
+      fetch('../ssearch.json')
         .then(response => response.json())
         .then(data => {
           var searchResultsContainer = document.querySelector('.search-results');
@@ -61,11 +61,11 @@ link.id="link";
 <body>
   <header>
     <div class="container">
-      <img src="images/logo.png" alt="Search Engine Logo" class="logo">
+      <img src="../images/logo.png" alt="Search Engine Logo" class="logo">
       <form class="search-bar" action="search" onsubmit="submitSearch(event)">
   <input id="search-query" type="text" placeholder="Search...">
   <button type="submit">
-    <img src="images/search.png" alt="Search Icon" class="search-icon">
+    <img src="../images/search.png" alt="Search Icon" class="search-icon">
   </button>
 </form>
 
