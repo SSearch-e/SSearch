@@ -4,6 +4,7 @@ The official repo for SSearch (SecureSearch)
 We still need allot of websites in our json but when we have allot we will be one of the most secure search engines!
 
 Website: https://ssearch-eta.vercel.app/
+Blog: https://ssearch-blog.vercel.app/
 
 Latest website ui update: https://github.com/SSearch-e/SSearch/releases/tag/1.0.4
 
