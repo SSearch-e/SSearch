@@ -41,6 +41,16 @@
   <a href="https://codepen.io/Hyperplexed/pen/xxJaxJj">Hyperplexed</a>. <a target="_blank" href="https://ssearch-eta.vercel.app/hyper-license.txt">His project copyright</a>
 </p>
   <script>
+    var bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+
+        document.write('<h2>Bookmarks</h2>');
+        document.write('<ul>');
+        bookmarks.forEach(function (bookmark) {
+            document.write('<li>' + bookmark + '</li>');
+        });
+        document.write('</ul>');
+  </script>
+  <script>
     document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('searchbar').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
@@ -49,7 +59,7 @@
   });
 
   function submitSearch(event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault(); 
     var searchQueryElement = document.getElementById('searchbar');
 
     if (searchQueryElement) {
