@@ -21,13 +21,7 @@
           </div>
         </div>
         <div id="apps-container">
-          <a href="#" target="_blank">
-            <img src="https://via.placeholder.com/50" />
-            <div class="label">
-              <span class="name">Placeholder bookmark</span>
-              <span class="url">This bookmark will go away after you set your first one!</span>
-            </div>
-          </a>
+          
         </div>
         <div id="add-bookmark-container">
           <button id="add-bookmark-button" onclick="window.location.href='bookmark'" type="button">Add Bookmark</button>
@@ -42,13 +36,16 @@
 </p>
   <script>
     var bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
-
-        document.write('<h2>Bookmarks</h2>');
-        document.write('<ul>');
         bookmarks.forEach(function (bookmark) {
-            document.write('<li>' + bookmark + '</li>');
+            document.getElementById('apps-container').innerHTML += `
+            <a href="${bookmark}" target="_blank">
+            <img src="${bookmark}/favicon.ico" />
+            <div class="label">
+              <span class="name">${bookmark}</span>
+            </div>
+          </a>
+            `;
         });
-        document.write('</ul>');
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
