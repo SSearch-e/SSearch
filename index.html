@@ -35,13 +35,20 @@
   <a href="https://codepen.io/Hyperplexed/pen/xxJaxJj">Hyperplexed</a>. <a target="_blank" href="https://ssearch-eta.vercel.app/hyper-license.txt">His project copyright</a>
 </p>
   <script>
+    function ensureHttps(url) {
+  if (!url.startsWith('http')) {
+    url = 'https://' + url;
+  }
+  return url;
+}
+    
     var bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
         bookmarks.forEach(function (bookmark) {
             document.getElementById('apps-container').innerHTML += `
-            <a href="${bookmark}" target="_blank">
-            <img src="${bookmark}/favicon.ico" />
+            <a href="${ensureHttps(bookmark)}" target="_blank">
+            <img src="${ensureHttps(bookmark)}/favicon.ico" />
             <div class="label">
-              <span class="name">${bookmark}</span>
+              <span style="font-size: x-large;" class="name">${bookmark}</span>
             </div>
           </a>
             `;
