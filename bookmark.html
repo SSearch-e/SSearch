@@ -34,32 +34,65 @@
         <a target="_blank" href="https://ssearch-eta.vercel.app/hyper-license.txt">His project copyright</a>
     </p>
     <script>
-        function addBookmark() {
-            var bookmarkInput = document.getElementById("bookmark-input");
-            var bookmarksList = document.getElementById("bookmarks-list");
-        
-            if (bookmarkInput.value.trim() !== '') {
-                var bookmarkItem = document.createElement("li");
-                bookmarkItem.className = "bookmark-item";
-                bookmarkItem.innerHTML = `
-                    <span>${bookmarkInput.value}</span>
-                    <button onclick="removeBookmark(this)">Remove</button>
-                `;
-        
-                bookmarksList.appendChild(bookmarkItem);
-                bookmarkInput.value = '';
-            }
+    var bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+
+    function addBookmark() {
+        var bookmarkInput = document.getElementById("bookmark-input");
+        var bookmarksList = document.getElementById("bookmarks-list");
+
+        if (bookmarkInput.value.trim() !== '') {
+            bookmarks.push(bookmarkInput.value);
+
+            localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+
+            var bookmarkItem = document.createElement("li");
+            bookmarkItem.className = "bookmark-item";
+            bookmarkItem.innerHTML = `
+                <span>${bookmarkInput.value}</span>
+                <button onclick="removeBookmark(this)">Remove</button>
+            `;
+
+            bookmarksList.appendChild(bookmarkItem);
+            bookmarkInput.value = '';
         }
-        
-        function removeBookmark(button) {
-            var bookmarkItem = button.parentNode;
-            var bookmarksList = document.getElementById("bookmarks-list");
-            bookmarksList.removeChild(bookmarkItem);
+    }
+
+    function removeBookmark(button) {
+        var bookmarkItem = button.parentNode;
+        var bookmarksList = document.getElementById("bookmarks-list");
+
+        var bookmarkText = bookmarkItem.firstChild.innerText;
+        bookmarks = bookmarks.filter(bookmark => bookmark !== bookmarkText);
+
+        localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+
+        bookmarksList.removeChild(bookmarkItem);
+    }
+
+    function displayBookmarks() {
+        var bookmarksList = document.getElementById("bookmarks-list");
+        bookmarksList.innerHTML = '';
+
+        for (var i = 0; i < bookmarks.length; i++) {
+            var bookmarkItem = document.createElement("li");
+            bookmarkItem.className = "bookmark-item";
+            bookmarkItem.innerHTML = `
+                <span>${bookmarks[i]}</span>
+                <button onclick="removeBookmark(this)">Remove</button>
+            `;
+
+            bookmarksList.appendChild(bookmarkItem);
         }
-        
-        function returnHome() {
-            window.location.href = '/';
-        }
+    }
+
+    function returnHome() {
+        window.location.href = '/';
+    }
+
+
+    window.onload = function () {
+        displayBookmarks();
+    };
     </script>
 </body>
 
