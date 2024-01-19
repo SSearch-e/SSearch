@@ -58,16 +58,20 @@
     }
 
     function removeBookmark(button) {
-        var bookmarkItem = button.parentNode;
-        var bookmarksList = document.getElementById("bookmarks-list");
+    var bookmarkItem = button.parentNode;
+    var bookmarksList = document.getElementById("bookmarks-list");
 
-        var bookmarkText = bookmarkItem.firstChild.innerText;
-        bookmarks = bookmarks.filter(bookmark => bookmark !== bookmarkText);
+    console.log('Before removal:', bookmarks);
 
-        localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+    var bookmarkText = bookmarkItem.firstChild.innerText;
+    bookmarks = bookmarks.filter(bookmark => bookmark !== bookmarkText);
 
-        bookmarksList.removeChild(bookmarkItem);
-    }
+    console.log('After removal:', bookmarks);
+
+    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+
+    bookmarksList.removeChild(bookmarkItem);
+}
 
     function displayBookmarks() {
         var bookmarksList = document.getElementById("bookmarks-list");
