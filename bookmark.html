@@ -1,1 +1,66 @@
-Coming soon!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSearch Bookmarks</title>
+    <link rel="stylesheet" href="/bookmark.css">
+</head>
+
+<body>
+    <div id="container">
+        <div style="height: 20vh;"></div>
+        <div id="main-wrapper" class="fancy-scrollbar">
+            <div id="main">
+                <div id="content">
+                    <div style="height: 8vh;"></div>
+                    <div id="header-container">
+                        <img id="logo" src="https://ssearch-eta.vercel.app/images/logo2%20(1).png" alt="SSearch logo" />
+                    </div>
+                    <div id="bookmark-form">
+                        <input type="text" id="bookmark-input" placeholder="Enter URL">
+                        <button id="add-bookmark-button" onclick="addBookmark()">Add Bookmark</button>
+                    </div>
+                    <ul id="bookmarks-list"></ul>
+                    <button id="return-home-button" onclick="returnHome()">Return Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p style="display: block; width: 100%; text-align: center; margin: 0 auto;" target="_blank">
+        Original website made by
+        <a href="https://codepen.io/Hyperplexed/pen/xxJaxJj">Hyperplexed</a>.
+        <a target="_blank" href="https://ssearch-eta.vercel.app/hyper-license.txt">His project copyright</a>
+    </p>
+    <script>
+        function addBookmark() {
+            var bookmarkInput = document.getElementById("bookmark-input");
+            var bookmarksList = document.getElementById("bookmarks-list");
+        
+            if (bookmarkInput.value.trim() !== '') {
+                var bookmarkItem = document.createElement("li");
+                bookmarkItem.className = "bookmark-item";
+                bookmarkItem.innerHTML = `
+                    <span>${bookmarkInput.value}</span>
+                    <button onclick="removeBookmark(this)">Remove</button>
+                `;
+        
+                bookmarksList.appendChild(bookmarkItem);
+                bookmarkInput.value = '';
+            }
+        }
+        
+        function removeBookmark(button) {
+            var bookmarkItem = button.parentNode;
+            var bookmarksList = document.getElementById("bookmarks-list");
+            bookmarksList.removeChild(bookmarkItem);
+        }
+        
+        function returnHome() {
+            window.location.href = '/';
+        }
+    </script>
+</body>
+
+</html>
