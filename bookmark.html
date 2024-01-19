@@ -43,35 +43,25 @@
         if (bookmarkInput.value.trim() !== '') {
             bookmarks.push(bookmarkInput.value);
 
-            localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+            saveBookmarks();
 
-            var bookmarkItem = document.createElement("li");
-            bookmarkItem.className = "bookmark-item";
-            bookmarkItem.innerHTML = `
-                <span>${bookmarkInput.value}</span>
-                <button onclick="removeBookmark(this)">Remove</button>
-            `;
+            displayBookmarks();
 
-            bookmarksList.appendChild(bookmarkItem);
             bookmarkInput.value = '';
         }
     }
 
-    function removeBookmark(button) {
-    var bookmarkItem = button.parentNode;
-    var bookmarksList = document.getElementById("bookmarks-list");
+    function removeBookmark(index) {
+        bookmarks.splice(index, 1);
 
-    console.log('Before removal:', bookmarks);
+        saveBookmarks();
 
-    var bookmarkText = bookmarkItem.firstChild.innerText;
-    bookmarks = bookmarks.filter(bookmark => bookmark !== bookmarkText);
+        displayBookmarks();
+    }
 
-    console.log('After removal:', bookmarks);
-
-    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
-
-    bookmarksList.removeChild(bookmarkItem);
-}
+    function saveBookmarks() {
+        localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+    }
 
     function displayBookmarks() {
         var bookmarksList = document.getElementById("bookmarks-list");
@@ -82,7 +72,7 @@
             bookmarkItem.className = "bookmark-item";
             bookmarkItem.innerHTML = `
                 <span>${bookmarks[i]}</span>
-                <button onclick="removeBookmark(this)">Remove</button>
+                <button onclick="removeBookmark(${i})">Remove</button>
             `;
 
             bookmarksList.appendChild(bookmarkItem);
