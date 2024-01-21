@@ -60,16 +60,16 @@ function handleNewsLoad() {
                 for (let i = 0; i < data.articles.length; i++) {
                     let article = data.articles[i];
                     let articleHTML = `
-                    <div class="article-container">
-                    <img src="${article.urlToImage || "/images/imageNotFound.png"}">
-                    <h3>${article.title || "No title"}</h3>
-                    <h5>${article.description || "No description"}</h5>
-                    <h6><strong>Source: ${article.source.name}</strong></h6>
-                    <a style="font-size: small;" href="${article.url || "/"}>${article.url || "No URL"}</a>
-                    </div>
-                    `
-                    document.getElementById("news").innerHTML += articleHTML
-                }
+                        <div class="article-container">
+                            <img src="${article.urlToImage || "/images/imageNotFound.png"}">
+                            <h3>${article.title || "No title"}</h3>
+                            <h5>${article.description || "No description"}</h5>
+                            <h6><strong>Source: ${article.source.name}</strong></h6>
+                            <a style="font-size: small;" href="${article.url || "/"}">${article.url || "No URL"}</a>
+                        </div>
+                    `;
+                    document.getElementById("news").innerHTML += articleHTML;
+                }                
             })
             .catch(error => {
                 console.error('There was a problem with the fetch operation:', error);
