@@ -57,6 +57,9 @@ function handleNewsLoad() {
             })
             .then(data => {
                 console.log(data);
+                for (let i = 0; i < data.length; i++) {
+                    console.log(data[i]);
+                }
             })
             .catch(error => {
                 console.error('There was a problem with the fetch operation:', error);
