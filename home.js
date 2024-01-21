@@ -60,7 +60,7 @@ function handleNewsLoad() {
                 for (let i = 0; i < data.articles.length; i++) {
                     let article = data.articles[i];
                     let articleHTML = `
-                    <div>
+                    <div class="article-container">
                     <img src="${article.urlToImage || "https://via.placeholder.com/120"}">
                     <h3>${article.title || "No title"}</h3>
                     <h5>${article.description || "No description"}</h5>

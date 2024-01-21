@@ -297,3 +297,33 @@ button, a, input {
   height: 50px !important;
   border-radius: 5px;
 }
+
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  color: rgb(var(--highlight-color));
+}
+
+p {
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+}
+
+a {
+  color: rgb(28, 147, 228);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
