@@ -16,7 +16,7 @@
       searchResultsHeading.textContent = 'Search Results for "' + searchQuery + '"';
 
       // Fetch the JSON data
-      fetch('api/ssearch.json')
+      fetch('ss/ssearch.json')
         .then(response => response.json())
         .then(data => {
           var searchResultsContainer = document.querySelector('#search-results');
