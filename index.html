@@ -49,52 +49,16 @@
     </a>
   </a>
 </p>
-  <script>
-    function getRootUrl(urlString) {
-  let url = new URL(urlString);
-  return `${url.protocol}//${url.host}/`;
-}
-    
-    function ensureHttps(url) {
-  if (!url.startsWith('http')) {
-    url = 'https://' + url;
-  }
-  return url;
-}
-    
-    var bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
-        bookmarks.forEach(function (bookmark) {
-            document.getElementById('apps-container').innerHTML += `
-            <a href="${ensureHttps(bookmark)}" target="_blank">
-            <img style="height: 30px !important;" src="${getRootUrl(ensureHttps(bookmark))}/favicon.ico" />
-            <div class="label">
-              <span style="font-size: x-large;" class="name">${bookmark}</span>
-            </div>
-          </a>
-            `;
-        });
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('searchbar').addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-      submitSearch(event);
-    }
-  });
-
-  function submitSearch(event) {
-    event.preventDefault(); 
-    var searchQueryElement = document.getElementById('searchbar');
-
-    if (searchQueryElement) {
-      var searchQuery = searchQueryElement.value;
-      if (searchQuery.trim() !== '') {
-        window.location.href = 'search?q=' + encodeURIComponent(searchQuery);
-      }
-    }
-  }
-});
-</script>
+<br>
+<br>
+<p style="display: block; width: 100%; text-align: center; margin: 0 auto;">	&darr; Scroll for news 	&darr;</p>
+<br>
+<br>
+<br>
+<br>
+<div id="newsLoadTrigger" style="height: 30vh;"></div>
+<a>Coming soon this was a test!</a>
+  <script src="/home.js"></script>
 </body>
 
 </html>
