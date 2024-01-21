@@ -51,7 +51,29 @@ above dependencies add these lines:
 
 Now open the index.js make this the content:
 ```js
-console.log("Started")
+const express = require('express');
+const fetch = require('node-fetch');
+const { createReadStream } = require('fs');
+const app = express();
+const port = 3000; // You can change the port as needed
+
+app.use(express.static('/'));
+
+app.get('/api/news', async (req, res) => {
+  try {
+    const newsHandler = require('./api/news.js');
+    
+    // Use the exported handler function
+    await newsHandler(req, res);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
 ```
 
 Website: https://ssearch-eta.vercel.app/
