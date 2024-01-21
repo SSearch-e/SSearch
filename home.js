@@ -48,7 +48,7 @@ function handleNewsLoad() {
     if (displayed === false) {
         displayed = true
         console.log("Displaying news");
-        fetch('/api/news?country=us')
+        fetch('/api/news?country=be')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -58,7 +58,16 @@ function handleNewsLoad() {
             .then(data => {
                 console.log(data);
                 for (let i = 0; i < data.articles.length; i++) {
-                    console.log(data.articles[i]);
+                    let article = data.articles[i];
+                    let articleHTML = `
+                    <div>
+                    <img src="${article.urlToImage || "https://via.placeholder.com/120"}">
+                    <h3>${article.title || "No title"}</h3>
+                    <h5>${article.description || "No description"}</h5>
+                    <h6><strong>Source: ${article.source.name}</strong></h6>
+                    </div>
+                    `
+                    document.getElementById("news").innerHTML += articleHTML
                 }
             })
             .catch(error => {
