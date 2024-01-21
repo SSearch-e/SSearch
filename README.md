@@ -43,10 +43,10 @@ Don't open it for now.
 Open the package.json file.
 above dependencies add these lines:
 ```
-"main": "index.js"
+"main": "index.js",
 "scripts": {
 "dev": "node .",
-}
+},
 ```
 
 Now open the index.js make this the content:
