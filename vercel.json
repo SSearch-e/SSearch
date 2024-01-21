@@ -1,0 +1,19 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'none';"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/images/logo2(1).png",
+      "destination": "/images/logo.png"
+    }
+  ]
+}
