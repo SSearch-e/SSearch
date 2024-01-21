@@ -22,9 +22,10 @@ Then get a API key from: https://newsapi.org/
 
 Unzip the code.
 
-Run this command:
+Run this commands:
 ```
 npm install
+npm install express
 ```
 
 Then the packages will be installed!
@@ -37,7 +38,21 @@ NEWS_API_KEY = ( Your newsapi.org api key)
 
 Then create a file called index.js
 
-End documentation for now if you want to install currently use vercel
+Don't open it for now.
+
+Open the package.json file.
+above dependencies add these lines:
+```
+"main": "index.js"
+"scripts": {
+"dev": "node .",
+}
+```
+
+Now open the index.js make this the content:
+```js
+console.log("Started")
+```
 
 Website: https://ssearch-eta.vercel.app/
 Blog: https://ssearch-blog.vercel.app/
