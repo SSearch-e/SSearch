@@ -65,6 +65,7 @@ function handleNewsLoad() {
                     <h3>${article.title || "No title"}</h3>
                     <h5>${article.description || "No description"}</h5>
                     <h6><strong>Source: ${article.source.name}</strong></h6>
+                    <a style="font-size: small;" href="${article.url || "/"}>${article.url || "No URL"}</a>
                     </div>
                     `
                     document.getElementById("news").innerHTML += articleHTML

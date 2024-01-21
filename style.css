@@ -303,6 +303,7 @@ button, a, input {
   margin: 0 auto;
   padding: 20px;
   color: white;
+  font-family: "Noto Sans", sans-serif;
 }
 
 h1 {
