@@ -57,8 +57,8 @@ function handleNewsLoad() {
             })
             .then(data => {
                 console.log(data);
-                for (let i = 0; i < data.length; i++) {
-                    console.log(data[i]);
+                for (let i = 0; i < data.articles.length; i++) {
+                    console.log(data.articles[i]);
                 }
             })
             .catch(error => {
