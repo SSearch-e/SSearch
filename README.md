@@ -1,20 +1,16 @@
 # SSearch
-<p align="center">
-    <img src="https://ssearch-eta.vercel.app/images/logo.png" alt="SSearch">
 
-    <img src="https://img.shields.io/github/v/release/ssearch-e/ssearch?label=Latest%20Version&style=for-the-badge&logo=github&logoColor=white&color=blue" alt="Latest Version">
-    <img src="https://img.shields.io/github/license/ssearch-e/ssearch?style=for-the-badge&color=green" alt="License">
-    <img src="https://img.shields.io/github/languages/count/ssearch-e/ssearch?style=for-the-badge&color=ff69b4" alt="Languages">
-    <img src="https://img.shields.io/badge/dynamic/json?label=websites&query=$.websites.length&url=https://ssearch-eta.vercel.app/ss/ssearch.json&color=brightgreen&style=for-the-badge">
+<div align="center">
+    
+![Latest Version](https://img.shields.io/github/v/release/ssearch-e/ssearch?label=Latest%20Version&style=for-the-badge&logo=github&logoColor=white&color=blue)
+![License](https://img.shields.io/github/license/ssearch-e/ssearch?style=for-the-badge&color=green)
+![Languages](https://img.shields.io/github/languages/count/ssearch-e/ssearch?style=for-the-badge&color=ff69b4)
+![Websites](https://img.shields.io/badge/dynamic/json?label=websites&query=$.websites.length&url=https://ssearch-eta.vercel.app/ss/ssearch.json&color=brightgreen&style=for-the-badge)
+[![View on GitHub](https://img.shields.io/badge/View%20on%20GitHub-333.svg?style=for-the-badge&logo=github&color=gray)](https://github.com/ssearch-e/ssearch)
+[![Deploy on Vercel](https://img.shields.io/badge/Deploy%20on-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSSearch-e%2FSSearch&env=NEWS_API_KEY&envDescription=The%20News%20API%20key%20is%20for%20newsapi.org%20get%20a%20API%20key%20there!&demo-title=SSearch%20live%20website&demo-description=The%20official%20live%20SSearch%20website&demo-url=https%3A%2F%2Fssearch-eta.vercel.app&demo-image=https%3A%2F%2Fssearch-eta.vercel.app%2Fimages%2Flogo.png)
 
-    <a href="https://github.com/ssearch-e/ssearch" target="_blank">
-        <img src="https://img.shields.io/badge/View%20on%20GitHub-333.svg?style=for-the-badge&logo=github&color=gray" alt="View on GitHub">
-    </a>
+</div>
 
-    <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSSearch-e%2FSSearch&env=NEWS_API_KEY&envDescription=The%20News%20API%20key%20is%20for%20newsapi.org%20get%20a%20API%20key%20there!&demo-title=SSearch%20live%20website&demo-description=The%20official%20live%20SSearch%20website&demo-url=https%3A%2F%2Fssearch-eta.vercel.app&demo-image=https%3A%2F%2Fssearch-eta.vercel.app%2Fimages%2Flogo.png">
-        <img src="https://img.shields.io/badge/Deploy%20on-Vercel-000000?style=for-the-badge&logo=vercel" alt="Deploy on Vercel">
-    </a>
-</p>
 
 The official repo for SSearch (SecureSearch)
 
