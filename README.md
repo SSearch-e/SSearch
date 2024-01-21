@@ -11,6 +11,34 @@ Deploy on vercel?
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSSearch-e%2FSSearch&env=NEWS_API_KEY&envDescription=The%20News%20API%20key%20is%20for%20newsapi.org%20get%20a%20API%20key%20there!&demo-title=SSearch%20live%20website&demo-description=The%20official%20live%20SSearch%20website&demo-url=https%3A%2F%2Fssearch-eta.vercel.app&demo-image=https%3A%2F%2Fssearch-eta.vercel.app%2Fimages%2Flogo.png)
 
+Install:
+You can deploy it on vercel (easy)
+
+Deploy yourself:
+download the source code from a release we make allot of changed so if you download the main branch there may be problems.
+So get it from the releases.
+
+Then get a API key from: https://newsapi.org/
+
+Unzip the code.
+
+Run this command:
+```
+npm install
+```
+
+Then the packages will be installed!
+
+In the root folder create a file called ".env"
+Make this the content:
+```
+NEWS_API_KEY = ( Your newsapi.org api key)
+```
+
+Then create a file called index.js
+
+End documentation for now if you want to install currently use vercel
+
 Website: https://ssearch-eta.vercel.app/
 Blog: https://ssearch-blog.vercel.app/
 
