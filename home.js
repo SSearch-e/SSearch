@@ -61,7 +61,7 @@ function handleNewsLoad() {
                     let article = data.articles[i];
                     let articleHTML = `
                     <div class="article-container">
-                    <img src="${article.urlToImage || "https://via.placeholder.com/120"}">
+                    <img src="${article.urlToImage || "/images/imageNotFound.png"}">
                     <h3>${article.title || "No title"}</h3>
                     <h5>${article.description || "No description"}</h5>
                     <h6><strong>Source: ${article.source.name}</strong></h6>
