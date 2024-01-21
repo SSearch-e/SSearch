@@ -34,7 +34,7 @@ Then the packages will be installed!
 In the root folder create a file called ".env"
 Make this the content:
 ```
-NEWS_API_KEY = ( Your newsapi.org api key)
+NEWS_API_KEY=(Your newsapi.org api key)
 ```
 
 Then create a file called index.js
