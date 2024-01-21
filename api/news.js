@@ -8,6 +8,8 @@ export default async function handler(req, res) {
     const response = await fetch(`${apiUrl}?apiKey=${apiKey}`);
     const data = await response.json();
 
+    console.log(`${apiUrl}?apiKey=${apiKey}`);
+
     res.status(200).json(data);
   } catch (error) {
     console.error(error);
