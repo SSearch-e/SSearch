@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     const response = await fetch(`${apiUrl}?apiKey=${apiKey}`);
     const data = await response.json();
 
-    res.status(200).json(data);
+    res.status(200).json([[apiKey]);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
