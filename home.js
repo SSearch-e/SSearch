@@ -48,7 +48,7 @@ function handleNewsLoad() {
     if (displayed === false) {
         displayed = true
         console.log("Displaying news");
-        fetch('/api/news?country=be')
+        fetch('/api/news?country=us')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
