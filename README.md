@@ -3,6 +3,14 @@ The official repo for SSearch (SecureSearch)
 
 We still need allot of websites in our json but when we have allot we will be one of the most secure search engines!
 
+SSearch is a open-source search engine
+That can run on almost anything! Because it does not use complex server code,
+SSearch is just HTML, CSS, JS and JSON.
+
+Deploy on vercel?
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSSearch-e%2FSSearch&env=NEWS_API_KEY&demo-title=SSearch%20live%20website&demo-description=The%20official%20live%20SSearch%20website&demo-url=https%3A%2F%2Fssearch-eta.vercel.app&demo-image=https%3A%2F%2Fssearch-eta.vercel.app%2Fimages%2Flogo.png)
+
 Website: https://ssearch-eta.vercel.app/
 Blog: https://ssearch-blog.vercel.app/
 
