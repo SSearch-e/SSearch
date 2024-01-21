@@ -120,6 +120,8 @@ npm run dev
 Go to the URL
 And your SSearch is installed!
 
+
+
 Website: https://ssearch-eta.vercel.app/
 Blog: https://ssearch-blog.vercel.app/
 
