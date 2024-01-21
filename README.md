@@ -45,7 +45,7 @@ above dependencies add these lines:
 ```
 "main": "index.js",
 "scripts": {
-"dev": "node .",
+"dev": "node ."
 },
 ```
 
