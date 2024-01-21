@@ -4,7 +4,7 @@
     {
       "source": "/",
       "headers": [
-        { "key": "X-Frame-Options", "value": "ALLOW-FROM https://ssearch-demo.vercel.app" }
+        { "key": "X-Frame-Options", "value": "DENY" }
       ]
     }
   ]
