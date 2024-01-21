@@ -5,9 +5,6 @@
   "dependencies": {
     "node-fetch": "^2.6.1"
   },
-  "engines": {
-    "node": "14.x"
-  },
   "devDependencies": {},
   "keywords": ["vercel", "serverless", "node", "javascript"],
   "author": "SietseDEV/SSearch",
