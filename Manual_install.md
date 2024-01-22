@@ -1,3 +1,10 @@
+# NodeJS
+We have created the scripts for nodejs version 19.0.0 so you may have issues on newer versions.
+NodeJS 19.0.0 is not supported anymore but it will probably work on most node versions.
+Node 19.0.0: https://nodejs.org/en/blog/release/v19.0.0
+Get the newest node version: https://nodejs.org/en/download/current
+Get the most recommended version: https://nodejs.org/en/download/
+
 # Manual Install
 Deploy yourself:
 download the source code from a release we make allot of changed so if you download the main branch there may be problems.
