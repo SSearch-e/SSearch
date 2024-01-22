@@ -19,6 +19,7 @@ We still need allot of websites in our json but when we have allot we will be on
 SSearch is a open-source search engine
 That can run on almost anything! Because it does not use complex server code,
 SSearch is just HTML, CSS, JS and JSON.
+And also using https://newsapi.org/ (Version 2) to display news on the homepage.
 
 Deploy on vercel?
 
