@@ -47,3 +47,5 @@ Old screenshots:
 
 
 ![SSearch results for google](https://github.com/SSearch-e/SSearch/assets/110413038/10fb73da-4adf-48b8-99b7-6189fe4417d7)
+
+SSearch was created on 17 May 2023
