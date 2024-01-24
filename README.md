@@ -34,10 +34,10 @@ Latest website ui update: https://github.com/SSearch-e/SSearch/releases/tag/1.0.
 
 Screenshots:
 
-![SSearch home page](https://ssearch-eta.vercel.app/ssearch-eta.vercel.app_.png)
+![SSearch home page](https://ssearch-shot.vercel.app/api/screenshot?url=https://ssearch-eta.vercel.app)
 
 
-![SSearch results for google](https://ssearch-eta.vercel.app/ssearch-eta.vercel.app_search_q=google.png)
+![SSearch results for google](https://ssearch-shot.vercel.app/api/screenshot?url=https://ssearch-eta.vercel.app/search?q=google)
 
 Old website archive: https://ssearch-eta.vercel.app/old/
 
