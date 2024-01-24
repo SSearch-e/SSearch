@@ -5,56 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Search Results - SSearch</title>
   <link rel="stylesheet" href="search.css">
-  <script>
-    window.onload = function() {
-      // Get the value of the "q" parameter from the URL
-      var urlParams = new URLSearchParams(window.location.search);
-      var searchQuery = urlParams.get('q');
-
-      // Update the search results heading
-      var searchResultsHeading = document.querySelector('h1');
-      searchResultsHeading.textContent = 'Search Results for "' + searchQuery + '"';
-
-      // Fetch the JSON data
-      fetch('ss/ssearch.json')
-        .then(response => response.json())
-        .then(data => {
-          var searchResultsContainer = document.querySelector('#search-results');
-          searchResultsContainer.innerHTML = ''; // Clear previous results
-
-          data.websites.forEach(function(website) {
-            if (website.title.toLowerCase().includes(searchQuery.toLowerCase())) {
-              // Create a search result div
-              var searchResultDiv = document.createElement('div');
-              searchResultDiv.className = 'search-result';
-
-              // Create a link for the search result title
-              var link = document.createElement('a');
-              link.href = website.link;
-link.id="link";
-              link.innerHTML = `
-              <div class="result">
-        <img class="result-logo" src="${website.ico}">
-        <div class="result-info">
-          <h2 class="result-name">${website.title}</h2>
-          <p class="result-description">${website.description}</p>
-        </div>
-      </div>
-              `;
-
-              // Append the link and description to the search result div
-              searchResultDiv.appendChild(link);
-
-              // Append the search result div to the search results container
-              searchResultsContainer.appendChild(searchResultDiv);
-            }
-          });
-        })
-        .catch(error => {
-          console.log('Error:', error);
-        });
-    };
-  </script>
+  <script src="/search.js"></script>
 </head>
 <body>
   <div id="container">
