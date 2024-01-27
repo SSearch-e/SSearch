@@ -14,8 +14,14 @@
 
 The official repo for SSearch (SecureSearch)
 
+New! Our NodeJS package for searching 
+<br>
+https://github.com/SSearch-e/ssearch-package
+<br>
+https://www.npmjs.com/package/ssearch?activeTab=readme
+
 **We are working on a indexer! Better results coming soon with NodeJS package, Vercel API and a NodeJS (Express) API.**
-> :warning: **This is not the big thing we where working on that is still secret!**
+> :warning: **These are not the big thing we where working on that is still secret!**
 
 We still need allot of websites in our json but when we have allot we will be one of the most secure search engines!
 
