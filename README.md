@@ -14,6 +14,8 @@
 
 The official repo for SSearch (SecureSearch)
 
+Vercel goes down some times so we have a BetterUptime page now: https://ssearch.betteruptime.com
+
 New! Our NodeJS package for searching 
 <br>
 https://github.com/SSearch-e/ssearch-package
