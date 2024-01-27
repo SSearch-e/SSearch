@@ -14,8 +14,8 @@
 
 The official repo for SSearch (SecureSearch)
 
-We are working on a indexer! Better results coming soon with NodeJS package, Vercel API and a NodeJS (Express) API.
-This is not the big thing we where working on that is still secret!
+**We are working on a indexer! Better results coming soon with NodeJS package, Vercel API and a NodeJS (Express) API.**
+> :warning: **This is not the big thing we where working on that is still secret!**
 
 We still need allot of websites in our json but when we have allot we will be one of the most secure search engines!
 
