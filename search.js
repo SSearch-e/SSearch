@@ -65,4 +65,41 @@ window.onload = function() {
     .catch(error => {
       console.log('Error:', error);
     });
-};
+
+let displayed = false;
+
+function handleNewsLoad() {
+    if (displayed === false) {
+        displayed = true
+        console.log("Displaying news");
+        fetch(`/api/search-news?q=${searchQuery}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                for (let i = 0; i < data.articles.length; i++) {
+                    let article = data.articles[i];
+                    let articleHTML = `
+                        <div class="article-container">
+                            <img src="${article.urlToImage || "/images/imageNotFound.png"}">
+                            <h3>${article.title || "No title"}</h3>
+                            <h5>${article.description || "No description"}</h5>
+                            <h6><strong>Source: ${article.source.name}</strong></h6>
+                            <a style="font-size: small;" href="${article.url || "/"}">${article.url || "No URL"}</a>
+                        </div>
+                    `;
+                    document.getElementById("news").innerHTML += articleHTML;
+                }                
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    }
+}
+
+  document.getElementById("newsBTN").addEventListener('click', handleNewsLoad)
+}
