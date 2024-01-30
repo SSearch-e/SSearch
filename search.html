@@ -6,6 +6,31 @@
   <title>Search Results - SSearch</title>
   <link rel="stylesheet" href="search.css">
   <script src="/search.js"></script>
+  <style>
+    .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+  </style>
 </head>
 <body>
   <div id="container">
@@ -17,8 +42,15 @@
         </div>
       </div>
     </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'search-results')">Search results</button>
+      <button class="tablinks" onclick="openTab(event, 'news-results')">News and Articles</button>
+    </div>
     <div id="search-results">
       <h1></h1>
+    </div>
+    <div id="news-results">
+      <a>News</a>
     </div>
     <p class="copyright">
       Original website made by 
@@ -47,5 +79,21 @@
   }
 });
 </script>
+  function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 </body>
 </html>
