@@ -6,6 +6,8 @@ Get the newest node version: https://nodejs.org/en/download/current
 Get the most recommended version: https://nodejs.org/en/download/
 
 # Manual Install
+> :warning: **The new searching news articles is not supported yet on the NodeJS version make your own API to replace it or wait until our solution**
+> 
 Deploy yourself:
 download the source code from a release we make allot of changed so if you download the main branch there may be problems.
 So get it from the releases.
