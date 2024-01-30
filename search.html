@@ -30,6 +30,10 @@
 .tab button.active {
   background-color: #ccc;
 }
+
+    .tabcontent {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -46,10 +50,10 @@
       <button class="tablinks" onclick="openTab(event, 'search-results')">Search results</button>
       <button class="tablinks" onclick="openTab(event, 'news-results')">News and Articles</button>
     </div>
-    <div id="search-results">
+    <div class="tabcontent" id="search-results">
       <h1></h1>
     </div>
-    <div id="news-results">
+    <div class="tabcontent" id="news-results">
       <a>News</a>
     </div>
     <p class="copyright">
