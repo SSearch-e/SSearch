@@ -9,8 +9,6 @@
   <style>
     .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
 }
 
 .tab button {
@@ -19,16 +17,17 @@
   border: none;
   outline: none;
   cursor: pointer;
+  color: white;
   padding: 14px 16px;
   transition: 0.3s;
 }
 
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #30303a;
 }
 
 .tab button.active {
-  background-color: #ccc;
+  background-color: #2e2c35;
 }
 
     .tabcontent {
@@ -50,6 +49,8 @@
       <button class="tablinks" onclick="openTab(event, 'search-results')">Search results</button>
       <button class="tablinks" onclick="openTab(event, 'news-results')">News and Articles</button>
     </div>
+    <br>
+    <br>
     <div class="tabcontent" id="search-results">
       <h1></h1>
     </div>
