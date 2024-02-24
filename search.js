@@ -6,7 +6,7 @@ window.onload = function() {
   var searchResultsHeading = document.querySelector('h1');
   searchResultsHeading.textContent = 'Search Results for "' + searchQuery + '"';
 
-  fetch('ss/ssearch.json')
+  fetch('ss/ssearch2.json')
     .then(response => response.json())
     .then(data => {
       var searchResultsContainer = document.querySelector('#search-results');
